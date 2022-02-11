@@ -1,0 +1,116 @@
+.flex {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+div[class^="grid"] {
+    display: grid;
+    height: 200px;
+    width: 200px;
+    border: 1px black solid;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 8px;
+    border: 8px #999999 solid;
+    background-color: #999999;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid1 {
+    grid-template-rows: 23% 1fr;
+    grid-template-areas:
+        'bloco1'
+        'bloco2'
+}
+
+.grid2 {
+    grid-template-rows: 23% 1fr 10%;
+    grid-template-areas:
+        'bloco1'
+        'bloco2'
+        'bloco3'
+}
+
+.grid3 {
+    grid-template-columns: 16% 1fr;
+    grid-template-areas:
+        'bloco1 bloco2'
+}
+
+.grid4 {
+    grid-template-columns: 16% 1fr 16%;
+    grid-template-areas:
+        'bloco1 bloco2 bloco3'
+}
+
+
+.grid5 {
+    grid-template-columns: 16% 1fr;
+    grid-template-rows: 23% 1fr;
+    grid-template-areas:
+        'bloco1 bloco1'
+        'bloco2 bloco3'
+
+}
+
+.grid6 {
+    grid-template-columns: 16% 1fr 16%;
+    grid-template-rows: 23% 1fr;
+    grid-template-areas:
+        'bloco1 bloco1 bloco1'
+        'bloco2 bloco3 bloco4'
+
+}
+
+.grid7 {
+    grid-template-columns: 16% 1fr;
+    grid-template-rows: 23% 1fr 10%;
+    grid-template-areas:
+        'bloco1 bloco1'
+        'bloco2 bloco3'
+        'bloco4 bloco4'
+
+}
+
+.grid8 {
+    grid-template-columns: 16% 1fr 16%;
+    grid-template-rows: 23% 1fr 10%;
+    grid-template-areas:
+        'bloco1 bloco1 bloco1'
+        'bloco2 bloco3 bloco4'
+        'bloco5 bloco5 bloco5'
+
+}
+
+/* ----------------------------------- blocos abaixo ----------------------------------- */
+
+.bloco1 {
+    background-color: #7F055F;
+    grid-area: bloco1;
+
+}
+
+.bloco2 {
+    background-color: #000000;
+    grid-area: bloco2;
+}
+
+.bloco3 {
+    background-color: #AFD2E9;
+    grid-area: bloco3;
+}
+
+.bloco4 {
+    background-color: #58355E;
+    grid-area: bloco4;
+}
+
+.bloco5 {
+    background-color: #7A5980;
+    grid-area: bloco5;
+}
